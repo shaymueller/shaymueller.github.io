@@ -13,12 +13,13 @@ header, footer {
 }
 footer{
     font-size:12px;
+
 }
 div img {
     float:right;
     width: 220px;
-    margin-top:-150px;
-margin-right: 80px;
+    margin-top:-50px;
+margin-right: 60px;
 border-radius: 10px 10px 10px 10px;
 box-shadow: 5px 5px 5px rgb(77, 77, 77);
 }
