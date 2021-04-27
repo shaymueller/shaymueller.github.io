@@ -13,7 +13,7 @@ footer {
 }
 
 footer {
-    font-size: 12px;
+    font-size: 9px;
     font-family: 'Libre Franklin', sans-serif;
 
 }
@@ -22,11 +22,8 @@ header{
     font-family: 'Anton', sans-serif;
 }
 
-div img {
-    float: right;
+header img {
     width: 220px;
-    margin-top: -50px;
-    margin-right: 60px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px rgb(77, 77, 77);
 }
@@ -43,10 +40,11 @@ main {
 ul {
     padding-left: 110px;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .mainheading {
     padding-left: 75px;
     font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
 }
