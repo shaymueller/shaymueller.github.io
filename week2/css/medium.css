@@ -1,0 +1,19 @@
+@media only screen and (min-width: 45em) {
+    header, main, footer {
+        max-width: 900px;
+    }
+
+    header, footer {
+        border-radius: 20px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+}

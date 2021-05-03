@@ -1,0 +1,92 @@
+body {
+    font-size: 14px;
+    background-color: rgb(201, 201, 209);
+    font-family: Lato, arial, sans-serif;
+}
+
+section {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: rgb(233, 233, 233);
+    text-align:left;
+    max-width: 400px;
+}
+
+footer {
+    font-size: 1em;
+}
+
+footer a {
+    color: black;
+}
+
+section .principle {
+    font-size: 1.5em;
+    color: black;
+    background-color:rgb(139, 152, 187);
+    margin: -10px -10px;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+section .company {
+    margin-top: 20px;
+    color: black;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+section .link a {
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+section .image  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+section .description {
+    color: black;
+    font-size: 1.2em;
+    padding: 5px;
+}
+header, footer {
+    text-align: center;
+    border-radius: 0px;
+    padding: 1.5em 4em;
+    background-color:rgb(139, 152, 187);
+    max-width: 100%;
+}
+
+header, main, footer {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Sriracha', cursive;
+    margin: 0px 0px 20px 0px;
+}
+
+header h2 {
+    font-size: 2em;
+    margin: 0px 0px;
+}
+
+main {
+    background-color: rgb(201, 201, 209);
+    padding: 1em 0em;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+    
+
