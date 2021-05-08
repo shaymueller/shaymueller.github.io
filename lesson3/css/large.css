@@ -1,0 +1,30 @@
+@media only screen and (min-width: 60em) {
+
+    main img {
+        width: 600px;
+        max-width: 100%;
+    }
+    nav ul li a {
+        font-size: 25px;
+           }
+       
+           h1, h2, h3, h4, h5, h6 {
+       font-size: 30px;
+           }
+       
+           footer {
+       font-size: 16px;
+           }
+       
+           main{
+               font-size: 22px;
+           }
+       
+           h1 {
+               font-size: 45px;
+           }
+       
+           h2 {
+               font-size: 35px;
+           }
+}

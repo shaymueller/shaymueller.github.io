@@ -1,0 +1,34 @@
+@media only screen and (min-width: 37.5em) {
+
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 100%; }
+
+    main img {
+        width: 500px;
+        max-width: 100%;
+    }
+
+    nav ul li a {
+ font-size: 20px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+font-size: 25px;
+    }
+
+    footer {
+font-size: 14px;
+    }
+
+    main{
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
