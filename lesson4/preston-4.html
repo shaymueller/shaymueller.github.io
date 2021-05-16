@@ -10,25 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
 </head>
 
 <body>
 
     <header>
-      <div>
         <img src="icon.png" alt="Roadway Weather Channel logo">
+      <section class="headings">
             <h1>Roadway Weather Channel</h1>
-            <div>Safer Travels Ahead</div>
-        </div>
+            <div class="subtitle">Safer Travels Ahead</div>
+      </section>
     </header>
 
-        <nav>
-            <ul>
+        <nav class="clearfix navigation">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navMenu" class="hidden">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li class="active"><a href="./preston-4.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -37,10 +38,11 @@
         </nav>
 
     <main>
-        <section>Weather Summary</section>
-        <section>5 Day Forecast</section>
-        <section>Article</section>
-        <section>Contact Information</section>
+        <h2>Preston Idaho</h2>
+        <section><b>Weather Summary</b></section>
+        <section><b>5 Day Forecast</b></section>
+        <section><b>Article</b></section>
+        <section><b>Contact Information</b></section>
 
     </main>
 
@@ -53,7 +55,7 @@
             Today's Date: <span id="todayDate"></span>
         </p>
     </footer>
-    <script src="#"></script>
+    <script src="./javascript/scripts.js"></script>
 </body>
 
 </html>
