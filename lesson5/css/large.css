@@ -1,0 +1,33 @@
+@media only screen and (min-width: 50em) {
+    nav button {
+        display: none;
+    }
+
+    nav ul li a{
+        border:none;
+        padding:.8em;
+        text-align: center;
+    }
+    nav ul.hidden {
+        display:flex;
+        justify-content: center;
+        justify-content:center;
+        padding: 5px;
+    }
+    nav ul{
+        margin:0;
+        padding:0;
+        font-size: 1.2em;
+    }
+    nav ul li{
+        padding:0px;
+        font-size:1rem;
+    
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+
+}

@@ -1,0 +1,26 @@
+@media only screen and (min-width: 37.5em) {
+
+    header img {
+        width: 105px;
+        height: auto;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav button {
+        margin: .3rem 2%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    
+
+}
