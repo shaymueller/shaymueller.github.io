@@ -112,14 +112,6 @@ main {
     max-width: 767px;
     margin: 0 auto;
 }
-
-main section {
-    padding: 20px;
-    text-align: center;
-    border: 5px dashed rgba(0,0,0,0.4);
-    margin: 10px;
-}
-
 main h2 {
     text-align: center;
     font-size:30px;
@@ -130,3 +122,35 @@ main h2 {
     clear: both;
     display: table;
   }
+
+.heroimg {
+    margin: 0 auto; 
+    position: relative;
+    max-width: 600px;
+
+}   
+.stats {
+	position: absolute;
+	background: radial-gradient(#eee, #6480b6);
+	border: 1px solid #000;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #333;
+	opacity: .8;
+    top: 15px;
+    left: 15px;
+}
+
+table tr {
+    max-width: 100%;
+    table-layout: 
+}
+
+td img {
+    width: 50px;
+    height: auto;
+}
+
+.cloudy {
+    width: 65px;
+    height: auto;
+}
