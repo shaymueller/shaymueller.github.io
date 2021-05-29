@@ -29,5 +29,28 @@
         font-size: 30px;
     }
 
+    .heroimg {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        object-fit:cover;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        
+}  
+
+    .stats {
+        background-color: #778DA9;
+        position: absolute;
+        top: 20rem;
+        left: 25rem;
+        padding: 1.5rem;
+        color: white;
+        padding: 0.5rem;
+        padding-left: 50px;
+        padding-right: 50px;  
+        margin: 0;
+    }
 
 }

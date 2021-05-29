@@ -41,3 +41,11 @@ document.getElementById("todayDate").textContent = fulldate;
 document.getElementById("currentYear").textContent = year;
 
 //copyright year
+
+//banner
+
+let date = new Date();
+
+ if (date.getDay()==5){
+    document.getElementById("banner").style.display= "block" ;
+}

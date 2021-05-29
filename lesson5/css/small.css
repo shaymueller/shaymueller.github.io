@@ -33,6 +33,7 @@ header h1 {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora', serif;
+    text-align: center;
 }
 
 nav {
@@ -124,33 +125,111 @@ main h2 {
   }
 
 .heroimg {
-    margin: 0 auto; 
-    position: relative;
-    max-width: 600px;
-
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        object-fit:cover;
+        padding: 0px;
+        margin: 0px;
 }   
 .stats {
-	position: absolute;
-	background: radial-gradient(#eee, #6480b6);
-	border: 1px solid #000;
+	background-color: #778DA9;
 	padding: 1.5rem;
-	box-shadow: 0 0 30px #333;
 	opacity: .8;
-    top: 15px;
-    left: 15px;
+    color: white;
+    padding: 0.5rem;
+    padding-left: 50px;
+    padding-right: 50px;  
+    margin: 0;
+}
+
+.herostats {
+    background-color: #eee;
+    margin: 0;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table tr {
-    max-width: 100%;
-    table-layout: 
+    table-layout: auto;
 }
 
 td img {
-    width: 50px;
+    width: 25px;
     height: auto;
 }
 
+th,
+td {
+  padding: 10px;
+  border: solid 1px;
+  text-align: center;
+  font-size: 12px;
+}
+
 .cloudy {
-    width: 65px;
+    width: 30px;
     height: auto;
+}
+
+table td p.daily-temp {
+    font-size: 16px;
+}
+
+p.author {
+    text-align: center;
+}
+
+img.cars {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    float: right;
+    margin: 2%;
+}
+
+p.article-text {
+    margin-left: 2%;
+    font-size: 14px;
+}
+
+img.map {
+    display: none;
+}
+
+section h5 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.contact-section {
+    background-color: #778DA9;
+    padding: 20px;
+}
+
+.contact-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.social {
+    width: 25px;
+    height: auto;
+    padding: 10px;
+    display: inline;
+}
+
+#banner {
+    
+    display: none;
+    background-color: #90CCF4;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+    text-align: center;
+
 }
