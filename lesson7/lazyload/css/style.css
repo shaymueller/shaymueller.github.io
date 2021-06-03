@@ -1,0 +1,24 @@
+.flex-images {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 300px;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+.bottom-img {
+    padding-bottom: 50px;
+}
