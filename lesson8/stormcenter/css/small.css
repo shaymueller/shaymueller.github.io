@@ -264,3 +264,55 @@ padding-top: 10px;
 text-align: center;
 
 }
+
+label.info input:required {
+    border-left: rgba(255, 0, 0, 0.6) solid 6px;
+}
+
+label.info input:required:valid {
+    border-left: rgba(0, 128, 0, 0.6) solid 6px;
+}
+
+input[type=text], input[type=tel], textarea, input[type=number], input[type=stormtype], input[type=date], #regions {
+    width: 100%;
+    padding: 12px 20px;
+    font-family: none;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+#fname, #email, #phone, #date, #type, #rating, #regions, #maybe {
+    margin-bottom: 25px;
+}
+
+  legend {
+      font-size: 20px;
+      margin-left: 6em;
+  }
+
+ input[type=radio] {
+      margin: 5px;
+  }
+
+#ratedvalue {
+      font-size: 25px;
+  }
+
+.slider {
+width: 100%
+}
+
+  form {
+      max-width: 80%;
+      padding-left: 10%;
+  }
+
+  .thanks {
+    max-width: 80%;
+    padding: 5em;
+    text-align: center;
+}

@@ -38,9 +38,8 @@
 
     <main>
         <main>
-            <div id = "stormyMan">
           <h2>Storm Center</h2>
-          <legend>Contact Information</legend>
+          <legend><b>Contact Information</b></legend>
             <form method="get" action="thanks.html" class="grid">
                 <fieldset>
                     <label>Full Name:<br>
@@ -63,8 +62,8 @@
                     <input type="date" name="theDate">
                 </label><br>
                 <label>Storm Type:<br>
-                    <input name="stormType" list="stormList" required></label>
-                <datalist id="stormList">
+                    <input name="stormType" list="stormOptions" required></label>
+                <datalist id="stormOptions">
                     <option value="Flash Flood">
                     <option value="Hail">
                     <option value="Hurricane">
@@ -73,8 +72,8 @@
                 </datalist>
                 <br>
                 <label class="flexly" for="severity">Severity: <br>
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span>
+                    <input class='slider' type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratedvalue">5</span>
                 </label>
         
                 <datalist id="tickmarks">
@@ -121,8 +120,6 @@
     
             
             </form>
-        </div>
-        </main>
     </main>
 
     <footer>

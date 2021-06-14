@@ -88,6 +88,17 @@ else {
   document.querySelector("#lastVisit").innerHTML = " " + sinceLV;
 }
 
+//form
+function selectResponse() {
+	const p = document.querySelector('#selected')
+	const s = document.querySelector('#stormOptions');
+	p.style.display = "block";
+	p.textContent = s.value;
+	
+}
+function adjustRating(rating) {
+  document.getElementById("ratedvalue").innerHTML = rating;
+}
 
 
 
