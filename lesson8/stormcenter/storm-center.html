@@ -37,9 +37,8 @@
     </nav>
 
     <main>
-        <main>
           <h2>Storm Center</h2>
-          <legend><b>Contact Information</b></legend>
+          <h3><b>Contact Information</b></h3>
             <form method="get" action="thanks.html" class="grid">
                 <fieldset>
                     <label>Full Name:<br>
@@ -47,16 +46,14 @@
                     </label><br>
                     <label>Email:<br>
                         <input type="email" name="email" required placeholder="youremail@email.com"></label><br>
-                    </label>
                     <label>Phone:<br>
                         <input type="tel" name="phone" required placeholder="###-###-####">
                     </label><br>
                     <label for="zip">Zip Code:<br>
-                        <input type="text" id="zip" name="zip" required pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep">
+                        <input type="text" id="zip" name="zip" required pattern="(\d{5}([\-]\d{4})?)">
                     </label><br>
                 </fieldset>
-                <legend>Storm Information</legend>
-        <form method="post" action="#" class="grid">
+                <h3>Storm Information</h3>
             <fieldset>
                 <label>Date of Storm:<br>
                     <input type="date" name="theDate">
@@ -71,7 +68,7 @@
                     <option value="Thunderstorm">
                 </datalist>
                 <br>
-                <label class="flexly" for="severity">Severity: <br>
+                <label>Severity: <br>
                     <input class='slider' type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratedvalue">5</span>
                 </label>
@@ -96,11 +93,11 @@
                   <option value="Soda Springs">Soda Springs</option>
                   <option value="Fish Haven">Fish Haven</option>
                 </select><br>
-                    <fieldset class="nestedfieldset">
+                    <fieldset>
                         <legend>Are you in danger? <em>(Choose one)</em></legend>
                         <div class="selection">
                             <input type="radio" id="dangeryes" name="danger" value="yes" checked> 
-                            <label for="dangerYes">Yes</label>
+                            <label>Yes</label>
                         </div>
                         <div class="selection">
                             <input type="radio" id="dangerNo" name="danger" value="no">
