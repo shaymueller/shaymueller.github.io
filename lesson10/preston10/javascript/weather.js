@@ -27,20 +27,15 @@ const apiURLforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604
 fetch(apiURLforecast)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
         const fivedayforecast = jsObject.list.filter(forecast => forecast.dt_txt.includes("18:00:00"));
         for (let i = 0; i < fivedayforecast.length; i++) {
             let forecast = fivedayforecast[i];
             let day = "weekday" + i;
-            let tempe = "hightemp" + i;
             let icon = "imgs" + i;
-            let forecastDate = new Date(forecast.dt_txt);
-            let forecastDay = days[forecastDate.getDay()];
-            const desc = forecast.weather[0].description;
-            const iconsrc = "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
-            document.getElementById(day).textContent = forecastDay;
-            document.getElementById(icon).setAttribute("src", iconsrc);
-            document.getElementById(icon).setAttribute("alt", desc);
+            let tempe = "hightemp" + i;
+            document.getElementById(icon).setAttribute("src", "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png");
+            document.getElementById(icon).setAttribute("alt", forecast.weather[0].description);
+            document.getElementById(day).textContent = days[new Date(forecast.dt_txt).getDay()];
             document.getElementById(tempe).textContent = forecast.main.temp;
         }
     });
