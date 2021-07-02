@@ -1,0 +1,317 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    background-color:#1B263B;
+    color: #e5e6e4;
+}
+
+header img {
+    width: 90px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+	letter-spacing: 1pt;
+	margin-left: 20px;
+	font-size: .9rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+nav {
+    background-color: #778DA9;
+    font-family: 'Lora', serif;
+    width: 100%;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+	padding: 0;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color:#1B263B;
+}
+nav ul li a {
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.3);
+    color: #e5e6e4;
+}
+
+nav ul li a:hover {
+    background-color: #1B263B;
+    color: #e5e6e4;
+}
+
+footer {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#1B263B;
+    color: #e5e6e4;
+    font-size: 12px;
+    padding: 10px;
+    max-width: 767px;
+    margin: 0 auto;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: #e5e6e4;
+}
+
+footer a:hover {
+    font-size:16px;
+    background-color:#778DA9;
+    color: black;
+}
+
+body{
+    background-image: linear-gradient(white,#778DA9);
+}
+
+main {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    margin: 0 auto;
+}
+main h2 {
+    text-align: center;
+    font-size:30px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+.Gallery{
+    display:grid;
+    grid-template-columns: 1fr;
+    max-width:1000px;
+    grid-gap: 10px;
+    margin:5px 8px 10px 8px;
+}
+.Gallery img{
+    width:100%;
+    margin-bottom: 2px;
+   }
+
+.Gallery picture:hover {box-shadow: 0 0 50px #333;}
+
+.Gallery picture{
+    margin-bottom: 20px;
+    padding-bottom: 10px;}
+
+figcaption{
+    padding: 5px;
+}
+
+.heroimg {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit:cover;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}   
+.stats {
+background-color: #778DA9;
+padding: 1.5rem;
+opacity: .8;
+color: white;
+padding: 0.5rem;
+padding-left: 50px;
+padding-right: 50px;  
+margin: 0;
+}
+
+.herostats {
+background-color: #eee;
+margin: 0;
+}
+
+table {
+margin-left: auto;
+margin-right: auto;
+}
+
+table tr {
+table-layout: auto;
+}
+
+td img {
+width: 25px;
+height: auto;
+}
+
+th,
+td {
+padding: 10px;
+border: solid 1px;
+text-align: center;
+font-size: 12px;
+}
+
+.cloudy {
+width: 30px;
+height: auto;
+}
+
+table td p.daily-temp {
+font-size: 16px;
+}
+
+p.author {
+text-align: center;
+}
+
+img.cars {
+max-width: 100%;
+width: 400px;
+height: auto;
+float: right;
+margin: 2%;
+}
+
+p.article-text {
+margin-left: 2%;
+font-size: 14px;
+}
+
+img.map {
+display: none;
+}
+
+section h5 {
+font-size: 20px;
+padding-top: 20px;
+}
+
+.contact-section {
+background-color: #778DA9;
+padding: 20px;
+}
+
+.contact-text {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.social {
+width: 25px;
+height: auto;
+padding: 10px;
+display: inline;
+}
+
+#banner {
+display: none;
+background-color: #90CCF4;
+padding: 0px;
+margin: 0px;
+padding-top: 10px;
+text-align: center;
+
+}
+
+label.info input:required {
+    border-left: rgba(255, 0, 0, 0.6) solid 6px;
+}
+
+label.info input:required:valid {
+    border-left: rgba(0, 128, 0, 0.6) solid 6px;
+}
+
+input[type=text], input[type=tel], textarea, input[type=number], input[type=stormtype], input[type=date], #regions {
+    width: 100%;
+    padding: 12px 20px;
+    font-family: none;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+#fname, #email, #phone, #date, #type, #rating, #regions, #maybe {
+    margin-bottom: 25px;
+}
+
+  legend {
+      font-size: 20px;
+      margin-left: 6em;
+  }
+
+ input[type=radio] {
+      margin: 5px;
+  }
+
+#ratedvalue {
+      font-size: 25px;
+  }
+
+.slider {
+width: 100%
+}
+
+  form {
+      max-width: 80%;
+      padding-left: 10%;
+  }
+
+  .thanks {
+    max-width: 80%;
+    padding: 5em;
+    text-align: center;
+}

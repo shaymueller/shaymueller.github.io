@@ -1,0 +1,59 @@
+@media only screen and (min-width: 37.5em) {
+
+    header img {
+        width: 105px;
+        height: auto;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    header h1 {
+        font-size: 27px;
+
+    }
+
+    nav button {
+        margin: .3rem 2%;
+    }
+
+    footer {
+        font-size: 14px;
+        margin-top: 10px;
+
+    }
+
+    td img {
+        width: 50px;
+        height: auto;
+    }
+    
+    .cloudy {
+        width: 60px;
+        height: auto;
+    }
+
+    th, td {
+  padding: 20px;
+  border: solid 1px;
+  text-align: center;
+  font-size: 20px;
+    }
+
+    table td p.daily-temp {
+        font-size: 19px;
+    }
+
+    img.map {
+        display: block;
+        float: left;
+        margin: 5%;
+        width: 250px;
+        height: auto;
+    }
+
+    .Gallery {grid-template-columns: 1fr 1fr;}
+  
+
+}
