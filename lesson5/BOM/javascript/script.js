@@ -4,6 +4,7 @@ const button = document.querySelector("button");
 
 button.addEventListener("click", function() {
   let userinput = input.value;
+  input.value = '';
 
   const li = document.createElement('li');
   const deletebutton = document.createElement('button');
