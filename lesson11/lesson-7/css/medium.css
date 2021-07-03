@@ -53,7 +53,7 @@
         height: auto;
     }
 
-    .Gallery {grid-template-columns: 1fr 1fr;}
+    .gallery {grid-template-columns: 1fr 1fr;}
   
 
 }
