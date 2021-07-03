@@ -54,6 +54,6 @@
         margin: 0;
     }
 
-    .Gallery {grid-template-columns: 1fr 1fr 1fr;}
+    .gallery {grid-template-columns: 1fr 1fr 1fr;}
 
 }

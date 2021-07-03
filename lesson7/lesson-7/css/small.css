@@ -123,6 +123,8 @@ main h2 {
     display: table;
   }
 
+  /* Gallery */
+
   img[data-src] {
     filter: blur(0.2em);
   }
@@ -132,27 +134,33 @@ img {
     transition: filter 0.5s;
   }
 
-.Gallery{
+.gallery{
     display:grid;
     grid-template-columns: 1fr;
     max-width:1000px;
     grid-gap: 10px;
     margin:5px 8px 10px 8px;
+    margin: 0 auto;
 }
-.Gallery img{
+.gallery img{
     width:100%;
     margin-bottom: 2px;
    }
 
-.Gallery picture:hover {box-shadow: 0 0 50px #333;}
+.gallery picture:hover {box-shadow: 0 0 50px #333;}
 
-.Gallery picture{
+.gallery picture{
     margin-bottom: 20px;
     padding-bottom: 10px;}
 
 figcaption{
     padding: 5px;
 }
+
+
+
+
+
 
 .heroimg {
     height: 100%;
