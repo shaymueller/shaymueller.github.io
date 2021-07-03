@@ -11,7 +11,7 @@ if (t <= 50 && s >= 3) {
 }
 
 //current weather api
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=622186510fc74294c33f85507b2fa3a6&units=imperial"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=622186510fc74294c33f85507b2fa3a6&units=imperial"
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -23,7 +23,7 @@ fetch(apiURL)
     });
 
 // 5 day forecast
-const apiURLforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=622186510fc74294c33f85507b2fa3a6&units=imperial"
+const apiURLforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=622186510fc74294c33f85507b2fa3a6&units=imperial"
 fetch(apiURLforecast)
     .then((response) => response.json())
     .then((jsObject) => {
