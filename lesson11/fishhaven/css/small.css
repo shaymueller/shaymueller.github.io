@@ -233,4 +233,11 @@ img.social {
     padding-top: 10px;
     text-align: center;
 
+
+}
+
+.events {
+    border: solid 5px #778DA9;
+    margin: 15px;
+    text-align: center;
 }

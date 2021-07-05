@@ -39,3 +39,27 @@ fetch(apiURLforecast)
             document.getElementById(tempe).textContent = forecast.main.temp;
         }
     });
+
+//events coming up
+const towninfoURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(towninfoURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject);
+        const towns = jsonObject['towns'];
+        for (let i = 0; i < [1]; i++) {
+            let event = document.createElement('div');
+            let a = document.createElement('p');
+            let b = document.createElement('p');
+            let c = document.createElement('p');
+            a.textContent = towns[6].events[0];
+            b.textContent = towns[6].events[1];
+            c.textContent = towns[6].events[2];
+            event.appendChild(a);
+            event.appendChild(b);
+            event.appendChild(c);
+            document.querySelector('div.events').appendChild(event);
+        }
+    });

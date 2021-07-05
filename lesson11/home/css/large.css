@@ -53,7 +53,13 @@
         padding-right: 50px;  
         margin: 0;
     }
+    
+    .box {
+        grid-template-columns: 1fr 1fr 1fr;        
+      }
 
-    .Gallery {grid-template-columns: 1fr 1fr 1fr;}
-
+    .box section {
+        display: block;
+        
+      }
 }
