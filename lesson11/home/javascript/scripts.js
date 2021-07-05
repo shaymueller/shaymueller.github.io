@@ -76,6 +76,14 @@ const lastUpdate = document.lastModified;
 document.getElementById("todayDate").textContent = fulldate;
 document.getElementById("currentYear").textContent = year;
 
+//banner
+
+let date = new Date();
+
+ if (date.getDay()==5){
+    document.getElementById("banner").style.display= "block" ;
+}
+
 
 
 //json object

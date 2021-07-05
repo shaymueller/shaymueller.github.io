@@ -40,8 +40,6 @@ const lastUpdate = document.lastModified;
 document.getElementById("todayDate").textContent = fulldate;
 document.getElementById("currentYear").textContent = year;
 
-//copyright year
-
 //banner
 
 let date = new Date();
