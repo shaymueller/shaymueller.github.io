@@ -1,0 +1,53 @@
+{
+    "business": [
+      {
+        "name": "Nu Skin Enterprises",
+        "phone": "+1 (800) 487-1000",
+        "yearFounded": 1984,
+        "website": "https://www.nuskin.com/en_US/home.html",
+        "logo": "nuskin.jpg"
+      },
+      {
+        "name": "Vivint",
+        "phone": "+1 (801) 377-9111",
+        "yearFounded": 1999,
+        "website": "https://www.vivint.com/",
+        "logo": "vivint.png"
+      },
+      {
+        "name": "Novell",
+        "phone": "+1-800-858-4000",
+        "yearFounded": 1979,
+        "website": "https://www.microfocus.com/en-us/products/novell/overview",
+        "logo": "novell.png"
+      },
+      {
+        "name": "Qualtrics",
+        "phone": "+1 (801) 374-6682",
+        "yearFounded": 2002,
+        "website": "https://www.qualtrics.com/",
+        "logo": "qualtrics.png"
+      },
+      {
+        "name": "Entrata",
+        "phone": "+1 (801) 895-2479",
+        "yearFounded": 2003,
+        "website": "https://www.entrata.com/",
+        "logo": "entrata.png"
+      },
+      {
+        "name": "New Age, Inc.",
+        "phone": "+1 (801) 234-1000",
+        "yearFounded": 1996,
+        "website": "https://www.newage.com/",
+        "logo": " newage.png"
+      },
+      {
+        "name": "Kitco",
+        "phone": "+1 (801) 489-2000",
+        "yearFounded": 1970,
+        "website": "http://www.kitcodefense.com/",
+        "logo": "kitco.png"
+      }
+    ]
+  }

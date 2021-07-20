@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provo Chamber of Commerce Home Page</title>
+    <meta name="description" content="Home Page for Provo Utah's Chamber of Commerce ">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <link href="#" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+</head>
+
+<body>
+    <div id="banner">
+    </div>
+
+    <header>
+        <a href='./index.html'><img src="./images/mountain-1849091_640.png" alt="Mountian Icon"></a>
+        <section class="headings">
+            <h1>Provo Chamber of Commerce</h1>
+        </section>
+        <div id='weather-corner'>
+            <p>Current Weather</p>
+            <p id='current-temp'></p>
+            <p id='current-condition'></p>
+            <p id='current-humidity'></p>
+        </div>
+    </header>
+
+    <nav class="clearfix navigation">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <li><a href="../join/join.html">Join</a></li>
+        <li><a href="../provo/provo.html">Provo</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="../directory/directory.html">Directory</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="weather-alert">
+        <span class="closebutton" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p> <span id='weather-alert-description'></span> for <b><span id='reason'></span></b>
+        <span id='weather-alert-sender'></span> </p>
+      </div>
+<!--Make the menu a fixed menu-->
+    <main>
+        <picture>
+            <source srcset="./images/homemediumhero.jpg" media="(min-width: 37.5em) and (max-width: 50em)">
+            <source srcset="./images/homelargehero.jpg" media="(min-width: 50em)">
+            <img class="heroimg" src="./images/homesmallhero.jpg" alt="view of Provo from mountian side">
+        </picture>
+
+        <di>
+            <p>MAKE A DIFFERENCE IN OUR COMMUNITY</p>
+            <p>BY JOINING</p>
+            <h2>The Provo Chamber of Commerce</h2>
+        </di>
+
+        <section>
+            <h3>Our Mission</h3>
+            <p>The Provo Chamber of Commerce's mission is to establish local business
+                relationships that promote business growth and support in our community.
+                Members voluntarily give attention to advancing our community for the next
+                generation and inspire many to pursue their dreams in entrepreneurship. This
+                community of volunteers will create a better local economy and sustainability.
+            </p>
+        </section>
+
+        <section>
+            <h3>Upcoming Events</h3>
+            <div id='events'></div>
+        </section>
+
+        <section>
+            <h3>Three Day Weather Forecast</h3>
+            <table>
+                <tr>
+                    <th id='day1'></th>
+                    <th id='day2'></th>
+                    <th id='day3'></th>
+                </tr>
+                <tr>
+                    <td><img id='icon1'></td>
+                    <td><img id='icon2'></td>
+                    <td><img id='icon3'></td>
+                </tr>
+                <tr>
+                    <td id='temp1'></td>
+                    <td id='temp2'></td>
+                    <td id='temp3'></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Business Highlights</h3>
+            <div id='business-card'></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h4>Contact us!</h4>
+        <p>(801) 562 6510</p>
+        <p>provo@chamberofcommerce.com</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./javascript/scripts.js"></script>
+    <script src="./javascript/fontload.js"></script>
+
+
+</body>
+
+</html>

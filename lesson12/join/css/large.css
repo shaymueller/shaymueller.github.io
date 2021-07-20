@@ -1,0 +1,65 @@
+@media only screen and (min-width: 50em) {
+    nav button {
+        display: none;
+    }
+
+    nav ul li a{
+        border:none;
+        padding:.8em;
+        text-align: center;
+    }
+    nav ul.hidden {
+        display:flex;
+        justify-content: center;
+        justify-content:center;
+        padding: 5px;
+    }
+    nav ul{
+        margin:0;
+        padding:0;
+        font-size: 1.2em;
+    }
+    nav ul li{
+        padding:0px;
+        font-size:1rem;
+    
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .heroimg {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        object-fit:cover;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        display:block;
+        
+}  
+
+    .stats {
+        background-color: #778DA9;
+        position: absolute;
+        top: 17rem;
+        left: 25rem;
+        padding: 1.5rem;
+        color: white;
+        padding: 0.5rem;
+        padding-left: 50px;
+        padding-right: 50px;  
+        margin: 0;
+    }
+    
+    .box {
+        grid-template-columns: 1fr 1fr 1fr;        
+      }
+
+    .box section {
+        display: block;
+        
+      }
+}
