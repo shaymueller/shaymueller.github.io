@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Provo Chamber of Commerce Home Page</title>
+    <title>The Provo Chamber of Commerce Home Page</title>
     <meta name="description" content="Home Page for Provo Utah's Chamber of Commerce ">
     <link rel="icon" type="image/png" href="./images/favicon.ico">
-    <link href="#" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/small.css">
     <link rel="stylesheet" href="./css/medium.css">
@@ -15,24 +15,18 @@
 </head>
 
 <body>
-    <div id="banner">
-    </div>
 
     <header>
         <a href='./index.html'><img src="./images/mountain-1849091_640.png" alt="Mountian Icon"></a>
         <section class="headings">
-            <h1>Provo Chamber of Commerce</h1>
+            <h1>The Provo Chamber of Commerce</h1>
         </section>
-        <div id='weather-corner'>
-            <p>Current Weather</p>
-            <p id='current-temp'></p>
-            <p id='current-condition'></p>
-            <p id='current-humidity'></p>
-        </div>
+
     </header>
 
     <nav class="clearfix navigation">
         <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navMenu" class="hidden">
         <li><a href="../join/join.html">Join</a></li>
         <li><a href="../provo/provo.html">Provo</a></li>
         <li class="active"><a href="index.html">Home</a></li>
@@ -46,7 +40,7 @@
         <p> <span id='weather-alert-description'></span> for <b><span id='reason'></span></b>
         <span id='weather-alert-sender'></span> </p>
       </div>
-<!--Make the menu a fixed menu-->
+
     <main>
         <picture>
             <source srcset="./images/homemediumhero.jpg" media="(min-width: 37.5em) and (max-width: 50em)">
@@ -54,10 +48,11 @@
             <img class="heroimg" src="./images/homesmallhero.jpg" alt="view of Provo from mountian side">
         </picture>
 
-        <di>
+        <div class='invite'>
             <p>MAKE A DIFFERENCE IN OUR COMMUNITY</p>
             <p>BY JOINING</p>
             <h2>The Provo Chamber of Commerce</h2>
+            <div>JOIN NOW!</div>
         </di>
 
         <section>
@@ -73,6 +68,13 @@
         <section>
             <h3>Upcoming Events</h3>
             <div id='events'></div>
+
+            <div class='weather-corner'>
+                <p><b>Current Weather</b></p>
+                <p><span id='current-temp'></span>°F</span></p>
+                <p><span id='current-condition'> <span id='current-temp'></span>°F</span></p>
+                <p><span id='current-humidity'></span>% Humidity</p>
+                </div>
         </section>
 
         <section>
@@ -104,16 +106,15 @@
     </main>
 
     <footer>
-        <h4>Contact us!</h4>
-        <p>(801) 562 6510</p>
+        <a href='../contact/contact.html'><h4>Contact us!</h4></a>
+        <p>+1 (801) 562 6510</p>
         <p>provo@chamberofcommerce.com</p>
+        <p>Last Updated: <span id='last-modification'></span></p>
     </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="./javascript/scripts.js"></script>
-    <script src="./javascript/fontload.js"></script>
-
 
 </body>
 

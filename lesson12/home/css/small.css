@@ -1,15 +1,32 @@
+div.weather-corner {
+    font-family: 'Montserrat', sans serif;
+    font-size: 14px;
+    border: 2px solid #002529;
+    background-color: rgba(00, 25, 29, 0.2);
+    padding: 10px;
+    text-align: center;
+
+}
+div.weather-corner p b {
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Lora', serif;
-    background-color: #1B263B;
-    color: #e5e6e4;
+    font-family: 'Bree Serif', serif;
+    background-color: #83c5be;
+    color: #002529;
+    padding: 20px;
 }
 
 header img {
-    width: 90px;
+    width: 125px;
     height: auto;
+    padding-right: 10px;
 }
 
 .headings {
@@ -17,18 +34,12 @@ header img {
     flex-direction: column;
 }
 
-.subtitle {
-    letter-spacing: 1pt;
-    margin-left: 20px;
-    font-size: .9rem;
-    text-align: center;
-}
-
 header h1 {
     margin: 0;
     margin-top: 10px;
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
+    color: #002529;
 }
 
 h1,
@@ -37,13 +48,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Lora', serif;
+    font-family: 'Bree Serif', serif;
     text-align: center;
 }
 
 nav {
-    background-color: #778DA9;
-    font-family: 'Lora', serif;
+    background-color: #002529;
+    color: #edf6f9;
+    font-family: 'Montserrat', sans serif;
     width: 100%;
 }
 
@@ -62,7 +74,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #1B263B;
+    color: #edf6f9;
 }
 
 nav ul li a {
@@ -70,55 +82,60 @@ nav ul li a {
     padding: 0.8rem;
     text-align: center;
     text-decoration: none;
-    color: black;
-    border-top: 1px solid rgba(0, 0, 0, 0.3)
+    color:#edf6f9;
+    border-top: 1px solid rgb(255, 255, 255)
 }
 
 nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #e5e6e4;
+    background-color:  #83c5be;
+    color: #002529;
 }
 
 nav ul li a:hover {
-    background-color: #1B263B;
-    color: #e5e6e4;
+    background-color: #e29578;
+    color: #002529;
 }
 
 footer {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background-color: #1B263B;
-    color: #e5e6e4;
-    font-size: 12px;
-    padding: 10px;
-    max-width: 767px;
+    background-color: #83c5be;
+    color: #002529;
+    font-size: 16px;
     margin: 0 auto;
+    text-align: center;
+}
 
+footer p {
+    margin: .5em;
 }
 
 footer a {
+    font-size: 20px;
     text-decoration: none;
-    color: #e5e6e4;
+    color: #002529 ;
 }
 
 footer a:hover {
-    font-size: 16px;
-    background-color: #778DA9;
-    color: black;
+    font-size: 20px;
+    padding: 0;
+    background-color: #ffddd2;
+    color: #002529;
 }
 
 body {
-    background-image: linear-gradient(white, #778DA9);
+    background-image: linear-gradient(white, #ffddd2, white);
 }
 
 main {
-    font-family: 'Quicksand', sans-serif;
-    color: black;
-    max-width: 767px;
+    font-family: 'Montserrat', sans-serif;
+    color: #002529;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 main h2 {
@@ -142,25 +159,11 @@ main h2 {
     display: block;
 }
 
-.stats {
-    background-color: #778DA9;
-    padding: 1.5rem;
-    opacity: .8;
-    color: white;
-    padding: 0.5rem;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0;
-}
-
-.herostats {
-    background-color: #eee;
-    margin: 0;
-}
 
 table {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
 table tr {
@@ -180,41 +183,6 @@ td {
     font-size: 12px;
 }
 
-.cloudy {
-    width: 30px;
-    height: auto;
-}
-
-table td p.daily-temp {
-    font-size: 16px;
-}
-
-p.author {
-    text-align: center;
-}
-
-img.cars {
-    max-width: 100%;
-    width: 400px;
-    height: auto;
-    float: right;
-    margin: 2%;
-}
-
-p.article-text {
-    margin-left: 2%;
-    font-size: 14px;
-}
-
-img.map {
-    display: none;
-}
-
-section h5 {
-    font-size: 20px;
-    padding-top: 20px;
-}
-
 .contact-section {
     background-color: #778DA9;
     padding: 20px;
@@ -231,16 +199,6 @@ img.social {
     height: auto;
     padding: 10px;
     display: inline;
-}
-
-#banner {
-
-    display: none;
-    background-color: #90CCF4;
-    padding: 0px;
-    margin: 0px;
-    padding-top: 10px;
-    text-align: center;
 }
 
 .box section img {
@@ -290,7 +248,6 @@ img.social {
     padding: 20px;
     background-color: #f44336; /* Red */
     color: white;
-    margin-bottom: 15px;
   }
   
   /* The close button */

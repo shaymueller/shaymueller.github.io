@@ -1,53 +1,17 @@
+//javascript for all pages
+
 //toggle menu
-/*function toggleMenu() {
+function toggleMenu() {
   document.getElementById("navMenu").classList.toggle("hidden");
 }
 
-//date
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday"
-];
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
-];
+//load fonts
+WebFont.load({google: {families: ["Lora", "Quicksand"]}});
 
-const d = new Date();
-const dayName = days[d.getDay()];
-const monthName = months[d.getMonth()];
-const year = d.getFullYear();
+// for latest edit on home page
+document.getElementById('last-modification').textContent = new Date(document.lastModified);
 
-const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-
-const lastUpdate = document.lastModified;
-
-document.getElementById("todayDate").textContent = fulldate;
-document.getElementById("currentYear").textContent = year;
-
-//banner
-
-let date = new Date();
-
- if (date.getDay()==5){
-    document.getElementById("banner").style.display= "block" ;
-}
-*/
+//javascript for this page 
 
 //weather API
 
