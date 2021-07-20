@@ -1,5 +1,5 @@
 //lazy loading script
-const imagesToLoad = document.querySelectorAll('img[data-src]');
+/*const imagesToLoad = document.querySelectorAll('img[data-src]');
 
 
 const imgOptions = {
@@ -84,43 +84,39 @@ let date = new Date();
     document.getElementById("banner").style.display= "block" ;
 }
 
-
+*/
 
 //json object
-const towninfoURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-fetch(towninfoURL)
+const businessdirectoryURL = "https://shaymueller.github.io/wdd230/business-directory.json";
+fetch(businessdirectoryURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-      const towns = jsonObject["towns"];
-      for (let i = 0; i < towns.length; i++) {
-        if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven"){
+      const bus = jsonObject["business"];
+      console.log(bus);
+      for (let i = 0; i < bus.length; i++) {
           let box = document.createElement('section');
           let data = document.createElement('div');
-          let name = document.createElement('h2');
-          let motto = document.createElement('h5');
-          let img = document.createElement('img');
+          let name = document.createElement('h3');
+          let logo = document.createElement('img');
+          let phone = document.createElement('p');
+          let website = document.createElement('p');
           let year = document.createElement('p');
-          let pop = document.createElement('p');
-          let rain = document.createElement('p');
-          name.textContent = towns[i].name;
-          motto.textContent = towns[i].motto;
-          year.textContent = 'Year Founded: ' + towns[i].yearFounded;
-          pop.textContent = 'Population: ' + towns[i].currentPopulation;
-          rain.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
+          name.textContent = bus[i].name;
+          phone.textContent = bus[i].phone;
+          year.textContent = bus[i].yearFounded;
+          website.textContent =  bus[i].website;
           data.setAttribute('id','data');
-          img.setAttribute("src", 'images/' + towns[i].photo);
-          img.setAttribute("alt", towns[i].name);
+          logo.setAttribute("src", 'images/' + bus[i].logo);
+          logo.setAttribute("alt", bus[i].name);
           data.appendChild(name);
-          data.appendChild(motto);
+          data.appendChild(phone);
           data.appendChild(year);
-          data.appendChild(pop);
-          data.appendChild(rain);
+          data.appendChild(website);
           box.appendChild(data);
-          box.appendChild(img);
-          document.querySelector("div.box").appendChild(box);
-        }
+          box.appendChild(logo);
+          document.querySelector("div.bus-cards").appendChild(box);
       }
     });
 
