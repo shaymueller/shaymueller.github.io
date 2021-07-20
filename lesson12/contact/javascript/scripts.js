@@ -1,5 +1,5 @@
 //lazy loading script
-const imagesToLoad = document.querySelectorAll('img[data-src]');
+/* const imagesToLoad = document.querySelectorAll('img[data-src]');
 
 
 const imgOptions = {
@@ -84,43 +84,6 @@ let date = new Date();
     document.getElementById("banner").style.display= "block" ;
 }
 
+*/
 
-
-//json object
-const towninfoURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-fetch(towninfoURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-      const towns = jsonObject["towns"];
-      for (let i = 0; i < towns.length; i++) {
-        if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven"){
-          let box = document.createElement('section');
-          let data = document.createElement('div');
-          let name = document.createElement('h2');
-          let motto = document.createElement('h5');
-          let img = document.createElement('img');
-          let year = document.createElement('p');
-          let pop = document.createElement('p');
-          let rain = document.createElement('p');
-          name.textContent = towns[i].name;
-          motto.textContent = towns[i].motto;
-          year.textContent = 'Year Founded: ' + towns[i].yearFounded;
-          pop.textContent = 'Population: ' + towns[i].currentPopulation;
-          rain.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
-          data.setAttribute('id','data');
-          img.setAttribute("src", 'images/' + towns[i].photo);
-          img.setAttribute("alt", towns[i].name);
-          data.appendChild(name);
-          data.appendChild(motto);
-          data.appendChild(year);
-          data.appendChild(pop);
-          data.appendChild(rain);
-          box.appendChild(data);
-          box.appendChild(img);
-          document.querySelector("div.box").appendChild(box);
-        }
-      }
-    });
 
