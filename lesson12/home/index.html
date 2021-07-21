@@ -27,19 +27,19 @@
     <nav class="clearfix navigation">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="navMenu" class="hidden">
-        <li><a href="../join/join.html">Join</a></li>
-        <li><a href="../provo/provo.html">Provo</a></li>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="../directory/directory.html">Directory</a></li>
-        <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../join/join.html">Join</a></li>
+            <li><a href="../provo/provo.html">Provo</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="../directory/directory.html">Directory</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <div class="weather-alert">
         <span class="closebutton" onclick="this.parentElement.style.display='none';">&times;</span>
         <p> <span id='weather-alert-description'></span> for <b><span id='reason'></span></b>
-        <span id='weather-alert-sender'></span> </p>
-      </div>
+            <span id='weather-alert-sender'></span> </p>
+    </div>
 
     <main>
         <picture>
@@ -47,80 +47,86 @@
             <source srcset="./images/homelargehero.jpg" media="(min-width: 50em)">
             <img class="heroimg" src="./images/homesmallhero.jpg" alt="view of Provo from mountian side">
         </picture>
-<div class='mostly-main'>
-        <div class='invite'>
-            <p class="line-one">MAKE A DIFFERENCE IN OUR COMMUNITY</p>
-            <p class="line-two">BY JOINING</p>
-            <h2>The Provo Chamber of Commerce</h2>
-            <div class='join-now'><a href='../join/join.html'>JOIN NOW!</a></div>
-        </di>
+        <div class='mostly-main'>
+            <div class='invite'>
+                <p class="line-one">MAKE A DIFFERENCE IN OUR COMMUNITY</p>
+                <p class="line-two">BY JOINING</p>
+                <h2 class='invite-heading'>The Provo Chamber of Commerce</h2>
+                <div class='join-now'><a href='../join/join.html'>JOIN NOW!</a></div>
+            </div>
+            <div class='gridone'>
+                <section class='mission'>
+                    <h3>Our Mission</h3>
+                    <p>The Provo Chamber of Commerce's mission is to establish local business
+                        relationships that promote business growth and support in our community.
+                        Members voluntarily give attention to advancing our community for the next
+                        generation and inspire many to pursue their dreams in entrepreneurship. This
+                        community of volunteers will create a better local economy and sustainability.
+                    </p>
+                </section>
 
-        <section class='mission'>
-            <h3>Our Mission</h3>
-            <p>The Provo Chamber of Commerce's mission is to establish local business
-                relationships that promote business growth and support in our community.
-                Members voluntarily give attention to advancing our community for the next
-                generation and inspire many to pursue their dreams in entrepreneurship. This
-                community of volunteers will create a better local economy and sustainability.
-            </p>
-        </section>
+                <section class='upcomingevents'>
+                    <h3>Upcoming Events</h3>
+                    <p> BIG SUMMER BASH 2021 <br>
+                        Thursday July 22-Friday July 23 <br>
+                        Provo Towne Centre <br>
+                        Provo, Utah</p>
 
-        <section class='upcomingevents'>
-            <h3>Upcoming Events</h3>
-           <p> BIG SUMMER BASH 2021 <br>
-            Thursday July 22-Friday July 23 <br>
-            Provo Towne Centre <br>
-            Provo, Utah</p>
-            
-            <p>PROVO PIONEER DAY EXTRAVAGANZA <br>
-            Saturday July 24th 10am - 2pm <br>
-            Kiwanis Park <br>
-            Provo, Utah</p>
-            
-            <p>PIONEER DAY CELEBRATION <br>
-            Saturday July 24th 11:00am - 9:45pm <br>
-            The Riverwoods <br>
-            Provo, Utah</p>
-            
+                    <p>PROVO PIONEER DAY EXTRAVAGANZA <br>
+                        Saturday July 24th 10am - 2pm <br>
+                        Kiwanis Park <br>
+                        Provo, Utah</p>
 
-            <div class='weather-corner'>
-                <h3>Current Weather</h3>
-                <p><span id='current-temp'></span>°F</span></p>
-                <p><span id='current-condition'> <span id='current-temp'></span>°F</span></p>
-                <p><span id='current-humidity'></span>% Humidity</p>
-                </div>
-        </section>
+                    <p>PIONEER DAY CELEBRATION <br>
+                        Saturday July 24th 11:00am - 9:45pm <br>
+                        The Riverwoods <br>
+                        Provo, Utah</p>
 
-        <section class='forecast'>
-            <h3>Three Day Weather Forecast</h3>
-            <table>
-                <tr>
-                    <th id='day1'></th>
-                    <th id='day2'></th>
-                    <th id='day3'></th>
-                </tr>
-                <tr>
-                    <td><img id='icon1'></td>
-                    <td><img id='icon2'></td>
-                    <td><img id='icon3'></td>
-                </tr>
-                <tr>
-                    <td id='temp1'></td>
-                    <td id='temp2'></td>
-                    <td id='temp3'></td>
-                </tr>
-            </table>
-        </section>
+                </section>
+            </div>
 
+            <div class='gridtwo'>
+                <section>
+                    <div class='weather-corner'>
+                        <h3>Current Weather</h3>
+                        <p><span id='current-temp'></span>°F</span></p>
+                        <p><span id='current-condition'> <span id='current-temp'></span>°F</span></p>
+                        <p><span id='current-humidity'></span>% Humidity</p>
+                    </div>
+                </section>
+                <section class='forecast'>
+                    <h3>Three Day Weather Forecast</h3>
+                    <table>
+                        <tr>
+                            <th id='day1'></th>
+                            <th id='day2'></th>
+                            <th id='day3'></th>
+                        </tr>
+                        <tr>
+                            <td><img id='icon1'></td>
+                            <td><img id='icon2'></td>
+                            <td><img id='icon3'></td>
+                        </tr>
+                        <tr>
+                            <td id='temp1'></td>
+                            <td id='temp2'></td>
+                            <td id='temp3'></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
         <section class='highlights'>
             <h2>Business Highlights</h2>
             <div class="bus-cards box"></div>
         </section>
-</div>
+        </div>
     </main>
 
     <footer>
-        <a href='../contact/contact.html'><h4>Contact us!</h4></a>
+        <a href='../contact/contact.html'>
+            <h4>Contact us!</h4>
+        </a>
         <p>+1 (801) 562 6510</p>
         <p>provo@chamberofcommerce.com</p>
         <p>Last Updated: <span id='last-modification'></span></p>

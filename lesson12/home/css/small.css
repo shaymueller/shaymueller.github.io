@@ -177,7 +177,6 @@ main h2 {
 }
 
 
-
 table {
     margin-left: auto;
     margin-right: auto;
@@ -198,10 +197,15 @@ table tr td {
     font-size: 20px;
 }
 
+.gridone {
+    display: grid;
+}
 
+.gridtwo {
+    display: grid;
+}
 
 .box section img {
-    border-radius: 7px;
     width: 150px;
     padding: 5px;
     padding-top: 30px;
@@ -215,7 +219,7 @@ table tr td {
 .box {
     text-align: center;
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 10px;
     padding-top: 22px;
     padding-bottom: 22px;
 }
