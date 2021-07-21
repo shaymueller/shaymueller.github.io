@@ -1,18 +1,3 @@
-div.weather-corner {
-    font-family: 'Montserrat', sans serif;
-    font-size: 14px;
-    border: 2px solid #002529;
-    background-color: rgba(00, 25, 29, 0.2);
-    padding: 10px;
-    text-align: center;
-
-}
-div.weather-corner p b {
-    font-size: 16px;
-    font-family: 'Bree Serif', serif;
-
-}
-
 header {
     display: flex;
     align-items: center;
@@ -130,12 +115,25 @@ body {
     background-image: linear-gradient(white, #ffddd2, white);
 }
 
+.heroimg {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+.mostly-main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 main {
     font-family: 'Montserrat', sans-serif;
     color: #002529;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
 }
 
 main h2 {
@@ -149,25 +147,42 @@ main h2 {
     display: table;
 }
 
-.heroimg {
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    padding: 0px;
-    margin: 0px;
-    display: block;
+.join-now {
+    font-size: 20px;
+    background-color: #e29578;
+    color: #002529;
+    border: 3px solid #002529;
+    box-shadow: 5px 5px 5px gray;
+    padding: 10px;
+    width: 25%;
+    margin: 0 auto;
+    text-decoration: none;
 }
+
+.join-now a {
+    text-decoration: none;
+    color: #002529;
+}
+
+.join-now a:hover{
+    background-color:#002529;
+    color: #e29578;
+}
+
+.mission h3, .upcomingevents h3, .forecast h3, .highlights h2, .weather-corner h3 {
+    font-size: 20px;
+    margin-top: 25px;
+    border: 3px solid #002529;
+    padding: 10px;
+}
+
 
 
 table {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-}
-
-table tr {
-    table-layout: auto;
+    border: 1px solid black;
 }
 
 td img {
@@ -175,42 +190,26 @@ td img {
     height: auto;
 }
 
-th,
-td {
+table tr th,
+table tr td {
     padding: 10px;
-    border: solid 1px;
+    border: none;
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
 }
 
-.contact-section {
-    background-color: #778DA9;
-    padding: 20px;
-}
 
-.contact-text {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img.social {
-    width: 25px;
-    height: auto;
-    padding: 10px;
-    display: inline;
-}
 
 .box section img {
     border-radius: 7px;
-    width: 80%;
+    width: 150px;
     padding: 5px;
     padding-top: 30px;
     padding-bottom: 40px;
 }
 
 .box img {
-    max-width: 100%;
+    width: 150px;
 }
 
 .box {
@@ -223,22 +222,17 @@ img.social {
 
 .box section {
     margin: auto;
-    background-color: #778DA9;
+    background-color: #e29578;
+    width: 90%;
+    height: auto;
 }
 
-.box h2 {
-    margin-bottom: 0px;
-}
-
-.box h5 {
-    margin-top: 0px;
-    font-size: 15px;
-    padding-top: 0px;
+.box h3 {
+    margin-bottom: 10px;
 }
 
 .box p {
     font-size: 17px;
-    margin: 0px;
 }
 
 /* Alert box*/
@@ -248,10 +242,11 @@ img.social {
     padding: 20px;
     background-color: #f44336; /* Red */
     color: white;
+    display: none;
   }
   
   /* The close button */
-  .closebutton {
+  .weather-alert.closebutton {
     margin-left: 15px;
     color: white;
     font-weight: bold;
@@ -263,6 +258,6 @@ img.social {
   }
   
   /* When moving the mouse over the close button */
-  .closebutton:hover {
+  .weather-alert.closebutton:hover {
     color: black;
   }

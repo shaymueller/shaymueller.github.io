@@ -54,10 +54,16 @@ fetch(apiURL)
     document.getElementById('temp3').textContent = jsObject.daily[2].temp.day;
 
     //alerts
+
+    if ( typeof jsObject.alerts !== 'undefined' ){
     document.getElementById('weather-alert-sender').textContent = jsObject.alerts[0].sender_name;
     document.getElementById('weather-alert-description').textContent = jsObject.alerts[0].description;
     document.getElementById('reason').textContent = jsObject.alerts[0].tags[0];
+    }
 
+    else {
+      document.getElementsByClassName('weather-alert').textContent = "none"
+    }
   });
 
   //business highlights
