@@ -246,22 +246,28 @@ table tr td {
     padding: 20px;
     background-color: #f44336; /* Red */
     color: white;
-    display: none;
   }
   
   /* The close button */
-  .weather-alert.closebutton {
+  .closebutton {
     margin-left: 15px;
     color: white;
     font-weight: bold;
-    float: right;
-    font-size: 22px;
+    float: left;
+    font-size: 50px;
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
   }
   
   /* When moving the mouse over the close button */
-  .weather-alert.closebutton:hover {
+  .closebutton:hover {
     color: black;
   }
+
+  img.social {
+    width: 25px;
+    height: auto;
+    padding: 10px;
+    display: inline;
+}

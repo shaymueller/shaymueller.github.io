@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#</title>
-    <meta name="description" content="#">
-    <link rel="icon" type="image/png" href="#">
-    <link href="#" rel="stylesheet">
+    <title>The Directory for ProvoChamber of Commerce</title>
+    <meta name="description" content="Business Directory for Provo Utah's Chamber of Commerce ">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/small.css">
     <link rel="stylesheet" href="./css/medium.css">
@@ -15,27 +15,24 @@
 </head>
 
 <body>
-    <div id="banner">
-    </div>
 
     <header>
-        <a href=''><img src="" alt=""></a>
+        <a href='./index.html'><img src="./images/mountain-1849091_640.png" alt="Mountian Icon"></a>
         <section class="headings">
-            <h1></h1>
+            <h1>The Provo Chamber of Commerce</h1>
         </section>
     </header>
-
     <nav class="clearfix navigation">
-        <li><a href="../join/join.html">Join</a></li>
-        <li><a href="../provo/provo.html">Provo</a></li>
-        <li><a href="../home/index.html">Home</a></li>
-        <li class='active'><a href="../directory/directory.html">Directory</a></li>
-        <li><a href="../contact/contact.html">Contact</a></li>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navMenu" class="hidden">
+            <li><a href="../join/join.html">Join</a></li>
+            <li><a href="../provo/provo.html">Provo</a></li>
+            <li><a href="../home/index.html">Home</a></li>
+            <li class="active"><a href="../directory/directory.html">Directory</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <div id="banner">
-    </div>
 
     <main>
         <picture>
@@ -43,26 +40,31 @@
             <source srcset="./images/homelargehero.jpg" media="(min-width: 50em)">
             <img class="heroimg" src="./images/homesmallhero.jpg" alt="areial view of Provo">
         </picture>
+        <div class='mostly-main'>
+            <div class='invite'>
+                <h2>BUSINESS DIRECTORY</h2>
+            </div>
 
-        <di>
-            <p>BUSINESS DIRECTORY</p>
-        </di>
+            <button onclick="listView()"><i class="fa fa-bars"></i> List</button>
+            <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
 
-        <div class="bus-cards"></div>
+            <div class="bus-cards box line"></div>
 
+        </div>
     </main>
 
     <footer>
-        <h4>Contact us!</h4>
-        <p>(801) 562 6510</p>
+        <a href='../contact/contact.html'>
+            <h4>Contact us!</h4>
+        </a>
+        <p>+1 (801) 562 6510</p>
         <p>provo@chamberofcommerce.com</p>
+        <p>Last Updated: <span id='last-modification'></span></p>
     </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="./javascript/scripts.js"></script>
-    <script src="./javascript/fontload.js"></script>
-
 
 </body>
 

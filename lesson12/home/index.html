@@ -29,7 +29,7 @@
         <ul id="navMenu" class="hidden">
             <li><a href="../join/join.html">Join</a></li>
             <li><a href="../provo/provo.html">Provo</a></li>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="../home/index.html">Home</a></li>
             <li><a href="../directory/directory.html">Directory</a></li>
             <li><a href="../contact/contact.html">Contact</a></li>
         </ul>
@@ -37,7 +37,7 @@
 
     <div class="weather-alert">
         <span class="closebutton" onclick="this.parentElement.style.display='none';">&times;</span>
-        <p> <span id='weather-alert-description'></span> for <b><span id='reason'></span></b>
+        <p> <span id='weather-alert-description'></span>  <b><span id='reason'></span></b>
             <span id='weather-alert-sender'></span> </p>
     </div>
 
@@ -63,6 +63,12 @@
                         generation and inspire many to pursue their dreams in entrepreneurship. This
                         community of volunteers will create a better local economy and sustainability.
                     </p>
+
+                <div class='social'>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/facebook-square.png" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="social" src="images/black-instagram.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="social" src="images/twitter-square.png" alt="twitter icon"></a>
+                </div>
                 </section>
 
                 <section class='upcomingevents'>
@@ -89,8 +95,8 @@
                 <section>
                     <div class='weather-corner'>
                         <h3>Current Weather</h3>
-                        <p><span id='current-temp'></span>°F</span></p>
-                        <p><span id='current-condition'> <span id='current-temp'></span>°F</span></p>
+                        <p><span id='current-temp'></span>°F</p>
+                        <p><span id='current-condition'></span></p>
                         <p><span id='current-humidity'></span>% Humidity</p>
                     </div>
                 </section>
@@ -120,7 +126,6 @@
             <h2>Business Highlights</h2>
             <div class="bus-cards box"></div>
         </section>
-        </div>
     </main>
 
     <footer>

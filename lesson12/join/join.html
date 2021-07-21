@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#</title>
-    <meta name="description" content="#">
-    <link rel="icon" type="image/png" href="#">
-    <link href="#" rel="stylesheet">
+    <title>The Provo Chamber of Commerce Join Page</title>
+    <meta name="description" content="Join Page for Provo Utah's Chamber of Commerce ">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/small.css">
     <link rel="stylesheet" href="./css/medium.css">
@@ -15,35 +15,32 @@
 </head>
 
 <body>
-    <div id="banner">
-    </div>
 
     <header>
-        <a href=''><img src="" alt=""></a>
+        <a href='./index.html'><img src="./images/mountain-1849091_640.png" alt="Mountian Icon"></a>
         <section class="headings">
-            <h1></h1>
+            <h1>The Provo Chamber of Commerce</h1>
         </section>
+
     </header>
 
     <nav class="clearfix navigation">
         <button onclick="toggleMenu()">&#9776;</button>
-        <li class='active'><a href="../join/join.html">Join</a></li>
-        <li><a href="../provo/provo.html">Provo</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="../directory/directory.html">Directory</a></li>
-        <li><a href="../contact/contact.html">Contact</a></li>
+        <ul id="navMenu" class="hidden">
+            <li class="active"><a href="../join/join.html">Join</a></li>
+            <li><a href="../provo/provo.html">Provo</a></li>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../directory/directory.html">Directory</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <div id="banner">
-    </div>
-
-    <main>
+    <main class='mostly-main'>
         <di>
             <h2>Application Form to Join</h2>
             <p>Thanks for considering joining the Provo Chamber of Commerce!</p>
-            <p>Fill out the application and we will be with you as soon as possible!</p>
-            <!--Add why it would be beneficial to join  -->
+            <p>Fill out the application and we will be in contact with you as soon as possible!</p>
+            <p>Your volunteer service can affect generations!</p>
         </di>
 
         <h3><b>Contact Information</b></h3>
@@ -88,22 +85,23 @@
                     <option value="Gold ($1000)">
                 </datalist>
             </fieldset>
-            <label><br><input type="submit" value="Send Application"></label>
+            <label><br><input type="submit" value="Send Application" class='join-now'></label>
         </form>
 
     </main>
 
     <footer>
-        <h4>Contact us!</h4>
-        <p>(801) 562 6510</p>
+        <a href='../contact/contact.html'>
+            <h4>Contact us!</h4>
+        </a>
+        <p>+1 (801) 562 6510</p>
         <p>provo@chamberofcommerce.com</p>
+        <p>Last Updated: <span id='last-modification'></span></p>
     </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="./javascript/scripts.js"></script>
-    <script src="./javascript/fontload.js"></script>
-
 
 </body>
 

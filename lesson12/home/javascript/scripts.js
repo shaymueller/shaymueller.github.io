@@ -5,8 +5,6 @@ function toggleMenu() {
   document.getElementById("navMenu").classList.toggle("hidden");
 }
 
-//load fonts
-WebFont.load({google: {families: ["Lora", "Quicksand"]}});
 
 // for latest edit on home page
 document.getElementById('last-modification').textContent = new Date(document.lastModified);
@@ -55,51 +53,49 @@ fetch(apiURL)
 
     //alerts
 
-    if ( typeof jsObject.alerts !== 'undefined' ){
-    document.getElementById('weather-alert-sender').textContent = jsObject.alerts[0].sender_name;
-    document.getElementById('weather-alert-description').textContent = jsObject.alerts[0].description;
-    document.getElementById('reason').textContent = jsObject.alerts[0].tags[0];
-    }
-
-    else {
+    if (typeof jsObject.alerts !== 'undefined') {
+      document.getElementById('weather-alert-sender').textContent = jsObject.alerts[0].sender_name;
+      document.getElementById('weather-alert-description').textContent = jsObject.alerts[0].description;
+      document.getElementById('reason').textContent = jsObject.alerts[0].tags[0];
+    } else {
       document.getElementsByClassName('weather-alert').textContent = "none"
     }
   });
 
-  //business highlights
+//business highlights
 
-  //json object
+//json object
 const businessdirectoryURL = "https://shaymueller.github.io/wdd230/business-directory.json";
 fetch(businessdirectoryURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-      const bus = jsonObject["business"];
-      console.log(bus);
-      for (let i = 0; i < bus.length; i++) {
-        if (bus[i].name == "Nu Skin Enterprises" || bus[i].name == "Vivint"  || bus[i].name == "Qualtrics" ){
-          let box = document.createElement('section');
-          let data = document.createElement('div');
-          let name = document.createElement('h3');
-          let logo = document.createElement('img');
-          let phone = document.createElement('p');
-          let website = document.createElement('p');
-          let year = document.createElement('p');
-          name.textContent = bus[i].name;
-          phone.textContent = bus[i].phone;
-          year.textContent = bus[i].yearFounded;
-          website.textContent =  bus[i].website;
-          data.setAttribute('id','data');
-          logo.setAttribute("src", 'images/' + bus[i].logo);
-          logo.setAttribute("alt", bus[i].name);
-          data.appendChild(name);
-          data.appendChild(phone);
-          data.appendChild(year);
-          data.appendChild(website);
-          box.appendChild(data);
-          box.appendChild(logo);
-          document.querySelector("div.bus-cards").appendChild(box);
+    const bus = jsonObject["business"];
+    console.log(bus);
+    for (let i = 0; i < bus.length; i++) {
+      if (bus[i].name == "Nu Skin Enterprises" || bus[i].name == "Vivint" || bus[i].name == "Qualtrics") {
+        let box = document.createElement('section');
+        let data = document.createElement('div');
+        let name = document.createElement('h3');
+        let logo = document.createElement('img');
+        let phone = document.createElement('p');
+        let website = document.createElement('p');
+        let year = document.createElement('p');
+        name.textContent = bus[i].name;
+        phone.textContent = bus[i].phone;
+        year.textContent = bus[i].yearFounded;
+        website.textContent = bus[i].website;
+        data.setAttribute('id', 'data');
+        logo.setAttribute("src", 'images/' + bus[i].logo);
+        logo.setAttribute("alt", bus[i].name);
+        data.appendChild(name);
+        data.appendChild(phone);
+        data.appendChild(year);
+        data.appendChild(website);
+        box.appendChild(data);
+        box.appendChild(logo);
+        document.querySelector("div.bus-cards").appendChild(box);
       }
-     }
-    });
+    }
+  });

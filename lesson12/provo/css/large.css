@@ -26,33 +26,48 @@
     }
 
     header h1 {
-        font-size: 30px;
+        font-size: 55px;
     }
 
     .heroimg {
-        height: 100%;
-        width: 100%;
-        max-width: 100%;
-        object-fit:cover;
-        padding: 0px;
-        margin: 0px;
         position: relative;
         display:block;
         
 }  
 
-    .stats {
-        background-color: #778DA9;
+    .invite {
         position: absolute;
-        top: 17rem;
-        left: 25rem;
-        padding: 1.5rem;
-        color: white;
-        padding: 0.5rem;
-        padding-left: 50px;
-        padding-right: 50px;  
-        margin: 0;
+        margin-top: -30%;
+        text-align: center;
+        margin-left: 22%;
+        color: #edf6f9;
     }
+
+    footer {
+        font-size: 18px;
+        margin-top: 10px;
+
+    }
+
+    main h2 {
+        font-size: 75px;
+        color: #002529;
+    }
+    .invite p{
+        font-size: 18px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    .upcomingevents h3, .demographics h3, .history h3, .highlights h2, .weather-corner h3 {
+        font-size: 25px;
+        margin-top: 25px;
+        border: 3px solid #002529;
+        padding: 10px;
+    }
+
     
     .box {
         grid-template-columns: 1fr 1fr 1fr;        
@@ -60,6 +75,6 @@
 
     .box section {
         display: block;
-        
-      }
+        margin: 0 auto;
+    }
 }
